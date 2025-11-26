@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Vincent De Cooman",
+    "tagline": "Développeur Full-Stack",
+    "description": "Avec plus de 5 ans d'expérience dans la création de solutions robustes et innovantes, je me spécialise en",
+    "and": "et",
+    "contactMe": "Me contacter",
+    "viewProjects": "Voir les projets"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Un peu plus sur qui je suis et ce que je fais",
+    "intro": "Je suis un <span class=\"text-primary font-semibold\">Développeur Full-Stack</span> avec plus de 5 ans d'expérience dans la création de solutions web robustes et innovantes. Mon expertise couvre l'ensemble de la pile de développement, de la conception d'interfaces utilisateur intuitives à la conception de systèmes backend efficaces.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "angular": "Angular (Principal)",
+    "typescript": "TypeScript",
+    "tailwind": "TailwindCSS",
+    "django": "Django / Python",
+    "springboot": "Spring Boot / Java",
+    "sql": "Bases de données SQL",
+    "education": "Actuellement, je poursuis mon <span class=\"text-secondary font-semibold\">Baccalauréat en informatique</span> à l'Université Laval à temps partiel tout en travaillant à temps plein comme développeur. Je suis passionné par l'apprentissage continu et le suivi des dernières tendances technologiques."
+  },
+  "experience": {
+    "title": "Expérience & Formation",
+    "subtitle": "Mon parcours professionnel et académique",
+    "workExperience": "Expérience professionnelle",
+    "educationTitle": "Formation",
+    "present": "Présent",
+    "partTime": "Temps partiel",
+    "dates": {
+      "jul2024": "Juil. 2024",
+      "mar2020": "Mars 2020",
+      "sep2023": "Sept. 2023",
+      "dec2023": "Déc. 2023",
+      "aug2024": "Août 2024",
+      "aug2022": "Août 2022",
+      "aug2020": "Août 2020",
+      "dec2021": "Déc. 2021"
+    },
+    "jobs": {
+      "luci": {
+        "role": "Développeur Full Stack",
+        "highlights": [
+          "Développement Full Stack avec Angular et Django",
+          "Superviseur de stage - mentorat de développeurs juniors",
+          "Construction d'applications web robustes et évolutives",
+          "Collaboration avec des équipes interfonctionnelles sur des solutions innovantes"
+        ]
+      },
+      "desjardins": {
+        "role": "Analyste-Programmeur",
+        "highlights": [
+          "Développement d'applications avec Angular et Spring Boot",
+          "Travail avec TypeScript et technologies web modernes",
+          "Contribution à une application web de cybersécurité",
+          "Collaboration dans un environnement de développement Agile"
+        ]
+      },
+      "udem": {
+        "role": "Auxiliaire d'enseignement",
+        "highlights": [
+          "IFT-1144 - Introduction à la programmation internet",
+          "Assistance aux étudiants sur les concepts de développement web",
+          "Correction des travaux et rétroaction"
+        ]
+      }
+    },
+    "schools": {
+      "laval": {
+        "degree": "Baccalauréat (B.Sc.A.)",
+        "field": "Informatique"
+      },
+      "udem": {
+        "degree": "Certificat",
+        "field": "Informatique appliquée"
+      },
+      "poly": {
+        "degree": "Certificat",
+        "field": "Cybersécurité des réseaux"
+      },
+      "cegep": {
+        "degree": "DEC (Technique)",
+        "field": "Programmation"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Une vitrine de mes travaux et projets clients",
+    "visitSite": "Visiter le site",
+    "comingSoon": "Bientôt disponible",
+    "antoineBaril": {
+      "name": "Antoine Baril - Courtier immobilier",
+      "description": "Un site portfolio conçu professionnellement pour un client. Comprend un design moderne et responsive avec des animations fluides et des performances optimisées."
+    },
+    "placeholder1": {
+      "name": "Projet à venir",
+      "description": "Un autre projet passionnant est en cours. Restez à l'écoute!"
+    },
+    "placeholder2": {
+      "name": "Projet à venir",
+      "description": "D'autres projets seront ajoutés bientôt."
+    }
+  },
+  "contact": {
+    "title": "Me contacter",
+    "subtitle": "Vous avez un projet en tête ou vous voulez simplement dire bonjour? N'hésitez pas à me contacter!",
+    "contactInfo": "Coordonnées",
+    "email": "Courriel",
+    "location": "Emplacement",
+    "locationValue": "Montréal, Québec, Canada",
+    "emailMe": "M'envoyer un courriel",
+    "sendMessage": "Envoyer un message",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "email": "Courriel",
+      "emailPlaceholder": "votre.courriel@exemple.com",
+      "message": "Message",
+      "messagePlaceholder": "Votre message...",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Merci pour votre message! Je vous répondrai bientôt.",
+      "error": "Échec de l'envoi du message. Veuillez m'envoyer un courriel directement."
+    }
+  },
+  "footer": {
+    "title": "Vincent De Cooman",
+    "subtitle": "Développeur Full-Stack",
+    "rights": "Tous droits réservés.",
+    "builtWith": "Construit avec Angular, TailwindCSS & daisyUI"
+  }
+}
+

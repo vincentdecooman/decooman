@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Vincent De Cooman",
+    "tagline": "Full-Stack Web Developer",
+    "description": "With 5+ years of experience building robust and innovative solutions, I specialize in",
+    "and": "and",
+    "contactMe": "Contact Me",
+    "viewProjects": "View Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "A bit more about who I am and what I do",
+    "intro": "I'm a <span class=\"text-primary font-semibold\">Full-Stack Developer</span> with over 5 years of experience building robust and innovative web solutions. My expertise spans across the entire development stack, from crafting intuitive user interfaces to designing efficient backend systems.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "angular": "Angular (Primary)",
+    "typescript": "TypeScript",
+    "tailwind": "TailwindCSS",
+    "django": "Django / Python",
+    "springboot": "Spring Boot / Java",
+    "sql": "SQL Databases",
+    "education": "Currently, I'm pursuing my <span class=\"text-secondary font-semibold\">Bachelor's degree in Computer Science</span> at Université Laval on a part-time basis while working full-time as a developer. I'm passionate about continuous learning and staying up-to-date with the latest technology trends."
+  },
+  "experience": {
+    "title": "Experience & Education",
+    "subtitle": "My professional journey and academic background",
+    "workExperience": "Work Experience",
+    "educationTitle": "Education",
+    "present": "Present",
+    "partTime": "Part-time",
+    "dates": {
+      "jul2024": "Jul 2024",
+      "mar2020": "Mar 2020",
+      "sep2023": "Sep 2023",
+      "dec2023": "Dec 2023",
+      "aug2024": "Aug 2024",
+      "aug2022": "Aug 2022",
+      "aug2020": "Aug 2020",
+      "dec2021": "Dec 2021"
+    },
+    "jobs": {
+      "luci": {
+        "role": "Full Stack Developer",
+        "highlights": [
+          "Full Stack Development using Angular and Django",
+          "Internship Supervisor - mentoring junior developers",
+          "Building robust and scalable web applications",
+          "Collaborating with cross-functional teams on innovative solutions"
+        ]
+      },
+      "desjardins": {
+        "role": "Analyst-Programmer",
+        "highlights": [
+          "Developed applications using Angular and Spring Boot",
+          "Worked with TypeScript and modern web technologies",
+          "Contributed to a web application for cybersecurity",
+          "Collaborated in an Agile development environment"
+        ]
+      },
+      "udem": {
+        "role": "Teaching Assistant",
+        "highlights": [
+          "IFT-1144 - Introduction to Internet Programming",
+          "Assisted students with web development concepts",
+          "Graded assignments and provided feedback"
+        ]
+      }
+    },
+    "schools": {
+      "laval": {
+        "degree": "Bachelor's Degree (B.Sc.A.)",
+        "field": "Computer Science"
+      },
+      "udem": {
+        "degree": "Certificate",
+        "field": "Applied Computer Science"
+      },
+      "poly": {
+        "degree": "Certificate",
+        "field": "Network Cybersecurity"
+      },
+      "cegep": {
+        "degree": "DEC (Technical)",
+        "field": "Programming"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A showcase of my work and client projects",
+    "visitSite": "Visit Site",
+    "comingSoon": "Coming Soon",
+    "antoineBaril": {
+      "name": "Antoine Baril – Portfolio Website",
+      "description": "A professionally designed portfolio website built for a client. Features a modern, responsive design with smooth animations and optimized performance."
+    },
+    "placeholder1": {
+      "name": "Project Coming Soon",
+      "description": "Another exciting project is in the works. Stay tuned!"
+    },
+    "placeholder2": {
+      "name": "Project Coming Soon",
+      "description": "More projects to be added soon."
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind or just want to say hello? Feel free to reach out!",
+    "contactInfo": "Contact Information",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "Montreal, Quebec, Canada",
+    "emailMe": "Email Me",
+    "sendMessage": "Send a Message",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you for your message! I'll get back to you soon.",
+      "error": "Failed to send message. Please try emailing me directly."
+    }
+  },
+  "footer": {
+    "title": "Vincent De Cooman",
+    "subtitle": "Full-Stack Developer",
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Angular, TailwindCSS & daisyUI"
+  }
+}
+

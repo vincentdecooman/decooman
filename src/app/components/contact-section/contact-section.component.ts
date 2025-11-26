@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-section',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateModule],
   templateUrl: './contact-section.component.html'
 })
 export class ContactSectionComponent {
@@ -44,12 +45,10 @@ export class ContactSectionComponent {
 
       if (result.success) {
         this.submitSuccess.set(true);
-        this.submitMessage.set('Thank you for your message! I\'ll get back to you soon.');
+        this.submitMessage.set('contact.form.success');
         
-        // Reset form
         this.formData = { name: '', email: '', message: '' };
         
-        // Clear message after 5 seconds
         setTimeout(() => {
           this.submitMessage.set('');
         }, 5000);
@@ -59,7 +58,7 @@ export class ContactSectionComponent {
     } catch (error) {
       console.error('Web3Forms error:', error);
       this.submitSuccess.set(false);
-      this.submitMessage.set('Failed to send message. Please try emailing me directly.');
+      this.submitMessage.set('contact.form.error');
     } finally {
       this.isSubmitting.set(false);
     }

@@ -1,71 +1,62 @@
 <section id="about" class="py-20 bg-base-100">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
     <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">
-      About Me
+      {{ 'about.title' | translate }}
     </h2>
     <p class="text-base-content/70 text-center mb-12 max-w-2xl mx-auto">
-      A bit more about who I am and what I do
+      {{ 'about.subtitle' | translate }}
     </p>
 
     <div class="card bg-base-200 shadow-xl">
       <div class="card-body p-6 sm:p-10">
         <div class="prose prose-lg max-w-none">
-          <p class="text-base-content/80 leading-relaxed">
-            I'm a <span class="text-primary font-semibold">Full-Stack Developer</span> with over 5 years of 
-            experience building robust and innovative web solutions. My expertise spans across the entire 
-            development stack, from crafting intuitive user interfaces to designing efficient backend systems.
-          </p>
+          <p class="text-base-content/80 leading-relaxed" [innerHTML]="'about.intro' | translate"></p>
           
           <div class="grid sm:grid-cols-2 gap-6 mt-8">
             <div class="bg-base-100 rounded-xl p-6 shadow-md">
               <h4 class="font-semibold text-lg mb-3 flex items-center gap-2">
-                <span class="text-primary">⚡</span> Frontend
+                <span class="text-primary">⚡</span> {{ 'about.frontend' | translate }}
               </h4>
               <ul class="space-y-2 text-base-content/70">
                 <li class="flex items-center gap-2">
                   <span class="w-2 h-2 rounded-full bg-primary"></span>
-                  Angular
+                  {{ 'about.angular' | translate }}
                 </li>
                 <li class="flex items-center gap-2">
                   <span class="w-2 h-2 rounded-full bg-primary"></span>
-                  TypeScript
+                  {{ 'about.typescript' | translate }}
                 </li>
                 <li class="flex items-center gap-2">
                   <span class="w-2 h-2 rounded-full bg-primary"></span>
-                  TailwindCSS
+                  {{ 'about.tailwind' | translate }}
                 </li>
               </ul>
             </div>
             
             <div class="bg-base-100 rounded-xl p-6 shadow-md">
               <h4 class="font-semibold text-lg mb-3 flex items-center gap-2">
-                <span class="text-secondary">🔧</span> Backend
+                <span class="text-secondary">🔧</span> {{ 'about.backend' | translate }}
               </h4>
               <ul class="space-y-2 text-base-content/70">
                 <li class="flex items-center gap-2">
                   <span class="w-2 h-2 rounded-full bg-secondary"></span>
-                  Django / Python
+                  {{ 'about.django' | translate }}
                 </li>
                 <li class="flex items-center gap-2">
                   <span class="w-2 h-2 rounded-full bg-secondary"></span>
-                  Spring Boot / Java
+                  {{ 'about.springboot' | translate }}
                 </li>
                 <li class="flex items-center gap-2">
                   <span class="w-2 h-2 rounded-full bg-secondary"></span>
-                  SQL Databases
+                  {{ 'about.sql' | translate }}
                 </li>
               </ul>
             </div>
           </div>
 
-          <p class="text-base-content/80 leading-relaxed mt-8">
-            Currently, I'm pursuing my <span class="text-secondary font-semibold">Bachelor's degree in Computer Science</span> 
-            at Université Laval on a part-time basis while working full-time as a developer. I'm passionate about 
-            continuous learning and staying up-to-date with the latest technology trends.
-          </p>
+          <p class="text-base-content/80 leading-relaxed mt-8" [innerHTML]="'about.education' | translate"></p>
         </div>
       </div>
     </div>
   </div>
 </section>
-

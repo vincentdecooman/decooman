@@ -1,30 +1,44 @@
 import { Component } from '@angular/core';
-import { Project } from '../../models/experience.model';
+import { TranslateModule } from '@ngx-translate/core';
+
+interface Project {
+  nameKey: string;
+  descriptionKey: string;
+  techStack: string[];
+  url?: string;
+}
+
+interface PlaceholderProject {
+  nameKey: string;
+  descriptionKey: string;
+  icon: string;
+}
 
 @Component({
   selector: 'app-projects-section',
   standalone: true,
+  imports: [TranslateModule],
   templateUrl: './projects-section.component.html'
 })
 export class ProjectsSectionComponent {
   readonly projects: Project[] = [
     {
-      name: 'Antoine Baril – Portfolio Website',
-      description: 'A professionally designed portfolio website built for a client. Features a modern, responsive design with smooth animations and optimized performance.',
+      nameKey: 'projects.antoineBaril.name',
+      descriptionKey: 'projects.antoineBaril.description',
       techStack: ['Modern Web Stack', 'Responsive Design', 'Performance Optimized'],
       url: 'https://antoinebaril.ca'
     }
   ];
 
-  readonly placeholderProjects = [
+  readonly placeholderProjects: PlaceholderProject[] = [
     {
-      name: 'Project Coming Soon',
-      description: 'Another exciting project is in the works. Stay tuned!',
+      nameKey: 'projects.placeholder1.name',
+      descriptionKey: 'projects.placeholder1.description',
       icon: '🚀'
     },
     {
-      name: 'Project Coming Soon',
-      description: 'More projects to be added soon.',
+      nameKey: 'projects.placeholder2.name',
+      descriptionKey: 'projects.placeholder2.description',
       icon: '💡'
     }
   ];

@@ -1,87 +1,93 @@
 import { Component } from '@angular/core';
-import { Experience, Education } from '../../models/experience.model';
+import { TranslateModule } from '@ngx-translate/core';
+
+interface Experience {
+  company: string;
+  roleKey: string;
+  startDate: string;
+  endDate: string;
+  location: string;
+  type: string;
+  highlightsKey: string;
+}
+
+interface Education {
+  institution: string;
+  degreeKey: string;
+  fieldKey: string;
+  startDate: string;
+  endDate: string;
+  note?: string;
+}
 
 @Component({
   selector: 'app-experience-section',
   standalone: true,
+  imports: [TranslateModule],
   templateUrl: './experience-section.component.html'
 })
 export class ExperienceSectionComponent {
   readonly experiences: Experience[] = [
     {
       company: 'Luci',
-      role: 'Full Stack Developer',
-      startDate: 'Jul 2024',
-      endDate: 'Present',
+      roleKey: 'experience.jobs.luci.role',
+      startDate: 'experience.dates.jul2024',
+      endDate: 'experience.present',
       location: 'Montreal, Quebec, Canada',
       type: 'Hybrid',
-      highlights: [
-        'Full Stack Development using Angular and Django',
-        'Internship Supervisor - mentoring junior developers',
-        'Building robust and scalable web applications',
-        'Collaborating with cross-functional teams on innovative solutions'
-      ]
+      highlightsKey: 'experience.jobs.luci.highlights'
     },
     {
       company: 'Desjardins',
-      role: 'Analyst-Programmer',
-      startDate: 'Mar 2020',
-      endDate: 'Jul 2024',
+      roleKey: 'experience.jobs.desjardins.role',
+      startDate: 'experience.dates.mar2020',
+      endDate: 'experience.dates.jul2024',
       location: 'Montreal, Quebec, Canada',
       type: 'Hybrid',
-      highlights: [
-        'Developed applications using Angular and Spring Boot',
-        'Worked with TypeScript and modern web technologies',
-        'Contributed to large-scale financial systems',
-        'Collaborated in an Agile development environment'
-      ]
+      highlightsKey: 'experience.jobs.desjardins.highlights'
     },
     {
       company: 'Université de Montréal',
-      role: 'Teaching Assistant',
-      startDate: 'Sep 2023',
-      endDate: 'Dec 2023',
+      roleKey: 'experience.jobs.udem.role',
+      startDate: 'experience.dates.sep2023',
+      endDate: 'experience.dates.dec2023',
       location: 'Montreal, Quebec, Canada',
       type: 'On-site',
-      highlights: [
-        'IFT-1144 - Introduction to Internet Programming',
-        'Assisted students with web development concepts',
-        'Graded assignments and provided feedback'
-      ]
+      highlightsKey: 'experience.jobs.udem.highlights'
     }
   ];
 
   readonly education: Education[] = [
     {
       institution: 'Université Laval',
-      degree: "Bachelor's Degree (B.Sc.A.)",
-      field: 'Computer Science',
-      startDate: 'Aug 2024',
+      degreeKey: 'experience.schools.laval.degree',
+      fieldKey: 'experience.schools.laval.field',
+      startDate: 'experience.dates.aug2024',
       endDate: '2028',
-      note: 'Part-time'
+      note: 'experience.partTime'
     },
     {
       institution: 'Université de Montréal',
-      degree: 'Certificate',
-      field: 'Applied Computer Science',
-      startDate: 'Aug 2022',
-      endDate: 'Jul 2024',
+      degreeKey: 'experience.schools.udem.degree',
+      fieldKey: 'experience.schools.udem.field',
+      startDate: 'experience.dates.aug2022',
+      endDate: 'experience.dates.jul2024',
       note: 'GPA: 4.3/4.3'
     },
     {
       institution: 'Polytechnique Montréal',
-      degree: 'Certificate',
-      field: 'Network Cybersecurity',
-      startDate: 'Aug 2020',
-      endDate: 'Dec 2021',
+      degreeKey: 'experience.schools.poly.degree',
+      fieldKey: 'experience.schools.poly.field',
+      startDate: 'experience.dates.aug2020',
+      endDate: 'experience.dates.dec2021',
       note: 'GPA: 3.85/4.0'
     },
     {
       institution: 'Cégep Édouard-Montpetit',
-      degree: 'DEC (Technical)',
-      field: 'Programming',
+      degreeKey: 'experience.schools.cegep.degree',
+      fieldKey: 'experience.schools.cegep.field',
       startDate: '2017',
-      endDate: '2020',
+      endDate: '2020'
     }
   ];
 }
