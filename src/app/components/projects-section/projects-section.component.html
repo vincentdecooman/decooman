@@ -1,0 +1,62 @@
+<section id="projects" class="py-20 bg-base-200">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">
+      Projects
+    </h2>
+    <p class="text-base-content/70 text-center mb-12 max-w-2xl mx-auto">
+      A showcase of my work and client projects
+    </p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      @for (project of projects; track project.name) {
+        <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <figure class="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+            <div class="text-6xl opacity-50">🌐</div>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">{{ project.name }}</h3>
+            <p class="text-base-content/70">{{ project.description }}</p>
+            <div class="flex flex-wrap gap-2 mt-2">
+              @for (tech of project.techStack; track tech) {
+                <span class="badge badge-outline badge-sm">{{ tech }}</span>
+              }
+            </div>
+            <div class="card-actions justify-end mt-4">
+              @if (project.url) {
+                <a 
+                  [href]="project.url" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="btn btn-primary btn-sm gap-2"
+                >
+                  Visit Site
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              }
+            </div>
+          </div>
+        </div>
+      }
+
+      <!-- Placeholder cards for future projects -->
+      @for (placeholder of placeholderProjects; track placeholder.name) {
+        <div class="card bg-base-100 shadow-lg border-2 border-dashed border-base-300 opacity-60">
+          <figure class="h-48 bg-base-200 flex items-center justify-center">
+            <div class="text-6xl opacity-30">{{ placeholder.icon }}</div>
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-base-content/50">{{ placeholder.name }}</h3>
+            <p class="text-base-content/40">{{ placeholder.description }}</p>
+            <!-- TODO: Add actual project details -->
+            <div class="card-actions justify-end mt-4">
+              <span class="badge badge-ghost">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
