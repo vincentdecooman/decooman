@@ -46,9 +46,9 @@ export class ContactSectionComponent {
       if (result.success) {
         this.submitSuccess.set(true);
         this.submitMessage.set('contact.form.success');
-        
+
         this.formData = { name: '', email: '', message: '' };
-        
+
         setTimeout(() => {
           this.submitMessage.set('');
         }, 5000);

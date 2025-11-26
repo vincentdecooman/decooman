@@ -7,4 +7,4 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [TranslateModule],
   templateUrl: './hero-section.component.html'
 })
-export class HeroSectionComponent {}
+export class HeroSectionComponent { }

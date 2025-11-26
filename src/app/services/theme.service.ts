@@ -9,7 +9,7 @@ export type Theme = 'light' | 'dark';
 export class ThemeService {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly storageKey = 'portfolio-theme';
-  
+
   readonly theme = signal<Theme>(this.getInitialTheme());
 
   constructor() {

@@ -10,9 +10,9 @@
       </div>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow-lg bg-base-100 rounded-box w-52">
         @for (link of navLinks; track link.href) {
-          <li>
-            <a [href]="link.href" class="text-base" (click)="closeMobileMenu()">{{ link.labelKey | translate }}</a>
-          </li>
+        <li>
+          <a [href]="link.href" class="text-base" (click)="closeMobileMenu()">{{ link.labelKey | translate }}</a>
+        </li>
         }
       </ul>
     </div>
@@ -21,23 +21,20 @@
       <span>incent De Cooman</span>
     </a>
   </div>
-  
+
   <!-- Desktop menu -->
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1 gap-1">
       @for (link of navLinks; track link.href) {
-        <li>
-          <a 
-            [href]="link.href" 
-            class="font-medium hover:text-primary transition-colors"
-          >
-            {{ link.labelKey | translate }}
-          </a>
-        </li>
+      <li>
+        <a [href]="link.href" class="font-medium hover:text-primary transition-colors">
+          {{ link.labelKey | translate }}
+        </a>
+      </li>
       }
     </ul>
   </div>
-  
+
   <div class="navbar-end gap-1">
     <app-language-switcher />
     <app-theme-toggle />

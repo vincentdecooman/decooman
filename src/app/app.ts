@@ -47,7 +47,7 @@ export class App implements OnInit {
   ngOnInit(): void {
     // Set available languages
     this.translate.addLangs(['en', 'fr']);
-    
+
     // Check for saved language preference
     const savedLang = localStorage.getItem('preferred-language');
     if (savedLang && ['en', 'fr'].includes(savedLang)) {
