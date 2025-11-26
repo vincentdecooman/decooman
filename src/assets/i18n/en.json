@@ -21,7 +21,7 @@
     "intro": "I'm a <span class=\"text-primary font-semibold\">Full-Stack Developer</span> with over 5 years of experience building robust and innovative web solutions. My expertise spans across the entire development stack, from crafting intuitive user interfaces to designing efficient backend systems.",
     "frontend": "Frontend",
     "backend": "Backend",
-    "angular": "Angular (Primary)",
+    "angular": "Angular",
     "typescript": "TypeScript",
     "tailwind": "TailwindCSS",
     "django": "Django / Python",
