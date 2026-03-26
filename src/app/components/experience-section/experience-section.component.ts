@@ -59,14 +59,6 @@ export class ExperienceSectionComponent {
 
   readonly education: Education[] = [
     {
-      institution: 'Université Laval',
-      degreeKey: 'experience.schools.laval.degree',
-      fieldKey: 'experience.schools.laval.field',
-      startDate: 'experience.dates.aug2024',
-      endDate: '2028',
-      note: 'experience.partTime'
-    },
-    {
       institution: 'Université de Montréal',
       degreeKey: 'experience.schools.udem.degree',
       fieldKey: 'experience.schools.udem.field',

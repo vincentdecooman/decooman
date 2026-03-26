@@ -4,8 +4,10 @@ import { TranslateModule } from '@ngx-translate/core';
 interface Project {
   nameKey: string;
   descriptionKey: string;
-  techStack: string[];
+  techStackKeys: string[];
   url?: string;
+  /** Path under site root (e.g. from /public) */
+  imageSrc?: string;
 }
 
 interface PlaceholderProject {
@@ -23,10 +25,15 @@ interface PlaceholderProject {
 export class ProjectsSectionComponent {
   readonly projects: Project[] = [
     {
-      nameKey: 'projects.antoineBaril.name',
-      descriptionKey: 'projects.antoineBaril.description',
-      techStack: ['Modern Web Stack', 'Responsive Design', 'Performance Optimized'],
-      url: 'https://antoinebaril.ca'
+      nameKey: 'projects.fdcMultiservices.name',
+      descriptionKey: 'projects.fdcMultiservices.description',
+      techStackKeys: [
+        'projects.fdcMultiservices.badge1',
+        'projects.fdcMultiservices.badge2',
+        'projects.fdcMultiservices.badge3'
+      ],
+      url: 'https://fdcmultiservices.ca/',
+      imageSrc: '/fdc-multiservices.png'
     }
   ];
 

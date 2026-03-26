@@ -27,7 +27,7 @@
     "django": "Django / Python",
     "springboot": "Spring Boot / Java",
     "sql": "SQL Databases",
-    "education": "Currently, I'm pursuing my <span class=\"text-secondary font-semibold\">Bachelor's degree in Computer Science</span> at Université Laval on a part-time basis while working full-time as a developer. I'm passionate about continuous learning and staying up-to-date with the latest technology trends."
+    "education": "I'm passionate about continuous learning and staying current with the latest web technologies. I combine hands-on professional experience with ongoing training to deliver solid, modern solutions."
   },
   "experience": {
     "title": "Experience & Education",
@@ -75,10 +75,6 @@
       }
     },
     "schools": {
-      "laval": {
-        "degree": "Bachelor's Degree (B.Sc.A.)",
-        "field": "Computer Science"
-      },
       "udem": {
         "degree": "Certificate",
         "field": "Applied Computer Science"
@@ -98,9 +94,12 @@
     "subtitle": "A showcase of my work and client projects",
     "visitSite": "Visit Site",
     "comingSoon": "Coming Soon",
-    "antoineBaril": {
-      "name": "Antoine Baril - Real Estate Broker",
-      "description": "A professionally designed website built for a real estate broker. Features a modern, responsive design with smooth animations and optimized performance."
+    "fdcMultiservices": {
+      "name": "FDC Multiservices",
+      "description": "Static showcase site (HTML, CSS, JavaScript) for a multiservice company—window cleaning, concierge, pressure washing and snow removal for homes and businesses in Saint-Jean-sur-Richelieu, Montréal and the South Shore. Optimized for search engines (SEO). Hosted on Cloudflare.",
+      "badge1": "Static site",
+      "badge2": "SEO",
+      "badge3": "Cloudflare"
     },
     "placeholder1": {
       "name": "Project Coming Soon",

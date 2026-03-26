@@ -27,7 +27,7 @@
     "django": "Django / Python",
     "springboot": "Spring Boot / Java",
     "sql": "Bases de données SQL",
-    "education": "Actuellement, je poursuis mon <span class=\"text-secondary font-semibold\">Baccalauréat en informatique</span> à l'Université Laval à temps partiel tout en travaillant à temps plein comme développeur. Je suis passionné par l'apprentissage continu et le suivi des dernières tendances technologiques."
+    "education": "Je suis passionné par l'apprentissage continu et le suivi des dernières technologies web. Je combine une expérience professionnelle concrète avec une formation continue pour livrer des solutions modernes et fiables."
   },
   "experience": {
     "title": "Expérience & Formation",
@@ -75,10 +75,6 @@
       }
     },
     "schools": {
-      "laval": {
-        "degree": "Baccalauréat (B.Sc.A.)",
-        "field": "Informatique"
-      },
       "udem": {
         "degree": "Certificat",
         "field": "Informatique appliquée"
@@ -98,9 +94,12 @@
     "subtitle": "Une vitrine de mes travaux et projets clients",
     "visitSite": "Visiter le site",
     "comingSoon": "Bientôt disponible",
-    "antoineBaril": {
-      "name": "Antoine Baril - Courtier immobilier",
-      "description": "Un site conçu professionnellement pour un courtier immobilier. Comprend un design moderne et responsive avec des animations fluides et des performances optimisées."
+    "fdcMultiservices": {
+      "name": "FDC Multiservices",
+      "description": "Site vitrine statique (HTML, CSS, JavaScript) pour une entreprise multiservices—lavage de vitres, conciergerie, lavage à pression et déneigement pour le résidentiel et le commercial à Saint-Jean-sur-Richelieu, Montréal et la Rive-Sud. Optimisé pour le référencement naturel (SEO). Hébergé sur Cloudflare.",
+      "badge1": "Site statique",
+      "badge2": "SEO",
+      "badge3": "Cloudflare"
     },
     "placeholder1": {
       "name": "Projet à venir",

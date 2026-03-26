@@ -10,15 +10,23 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       @for (project of projects; track project.nameKey) {
       <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-        <figure class="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+        <figure
+          [class]="project.imageSrc
+            ? 'h-48 bg-white flex items-center justify-center overflow-hidden px-4 py-5'
+            : 'h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center overflow-hidden'">
+          @if (project.imageSrc) {
+          <img [src]="project.imageSrc" [alt]="project.nameKey | translate"
+            class="h-full w-full object-contain object-center" loading="lazy" />
+          } @else {
           <div class="text-6xl opacity-50">🌐</div>
+          }
         </figure>
         <div class="card-body">
           <h3 class="card-title">{{ project.nameKey | translate }}</h3>
           <p class="text-base-content/70">{{ project.descriptionKey | translate }}</p>
           <div class="flex flex-wrap gap-2 mt-2">
-            @for (tech of project.techStack; track tech) {
-            <span class="badge badge-outline badge-sm">{{ tech }}</span>
+            @for (techKey of project.techStackKeys; track techKey) {
+            <span class="badge badge-outline badge-sm">{{ techKey | translate }}</span>
             }
           </div>
           <div class="card-actions justify-end mt-4">
