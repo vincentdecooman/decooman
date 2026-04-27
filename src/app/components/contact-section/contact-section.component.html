@@ -12,46 +12,63 @@
       <div class="card-body">
         <h3 class="card-title text-xl mb-4">{{ 'contact.sendMessage' | translate }}</h3>
 
-        <form (ngSubmit)="onSubmit()" class="space-y-4">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-4">
           <div class="form-control">
             <label class="label" for="name">
               <span class="label-text">{{ 'contact.form.name' | translate }}</span>
             </label>
-            <input type="text" id="name" [(ngModel)]="formData.name" name="name"
-              [placeholder]="'contact.form.namePlaceholder' | translate" class="input input-bordered w-full" required />
+            <input type="text" id="name" formControlName="name"
+              [placeholder]="'contact.form.namePlaceholder' | translate"
+              class="input input-bordered w-full"
+              [class.input-error]="name.invalid && name.touched" />
+            @if (name.invalid && name.touched) {
+              <span class="label-text-alt text-error mt-1">{{ 'contact.form.nameRequired' | translate }}</span>
+            }
           </div>
 
           <div class="form-control">
             <label class="label" for="email">
-              <span class="label-text">{{ 'contact.form.email' | translate }}</span>
+              <span class="label-text">{{ 'contact.form.email' | translate }} <span class="text-error">*</span></span>
             </label>
-            <input type="email" id="email" [(ngModel)]="formData.email" name="email"
-              [placeholder]="'contact.form.emailPlaceholder' | translate" class="input input-bordered w-full"
-              required />
+            <input type="email" id="email" formControlName="email"
+              [placeholder]="'contact.form.emailPlaceholder' | translate"
+              class="input input-bordered w-full"
+              [class.input-error]="email.invalid && email.touched" />
+            @if (email.touched) {
+              @if (email.hasError('required')) {
+                <span class="label-text-alt text-error mt-1">{{ 'contact.form.emailRequired' | translate }}</span>
+              } @else if (email.hasError('email')) {
+                <span class="label-text-alt text-error mt-1">{{ 'contact.form.emailInvalid' | translate }}</span>
+              }
+            }
           </div>
 
           <div class="form-control">
             <label class="label" for="message">
-              <span class="label-text">{{ 'contact.form.message' | translate }}</span>
+              <span class="label-text">{{ 'contact.form.message' | translate }} <span class="text-error">*</span></span>
             </label>
-            <textarea id="message" [(ngModel)]="formData.message" name="message"
+            <textarea id="message" formControlName="message"
               class="textarea textarea-bordered w-full h-32"
-              [placeholder]="'contact.form.messagePlaceholder' | translate" required></textarea>
+              [class.textarea-error]="message.invalid && message.touched"
+              [placeholder]="'contact.form.messagePlaceholder' | translate"></textarea>
+            @if (message.invalid && message.touched) {
+              <span class="label-text-alt text-error mt-1">{{ 'contact.form.messageRequired' | translate }}</span>
+            }
           </div>
 
-          <button type="submit" class="btn btn-primary btn-block" [disabled]="isSubmitting()">
+          <button type="submit" class="btn btn-primary btn-block" [disabled]="isSubmitting() || contactForm.invalid">
             @if (isSubmitting()) {
-            <span class="loading loading-spinner loading-sm"></span>
-            {{ 'contact.form.sending' | translate }}
+              <span class="loading loading-spinner loading-sm"></span>
+              {{ 'contact.form.sending' | translate }}
             } @else {
-            {{ 'contact.form.send' | translate }}
+              {{ 'contact.form.send' | translate }}
             }
           </button>
 
           @if (submitMessage()) {
-          <div class="alert" [class.alert-success]="submitSuccess()" [class.alert-error]="!submitSuccess()">
-            <span>{{ submitMessage() | translate }}</span>
-          </div>
+            <div class="alert" [class.alert-success]="submitSuccess()" [class.alert-error]="!submitSuccess()">
+              <span>{{ submitMessage() | translate }}</span>
+            </div>
           }
         </form>
       </div>
